@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Σπουδές - Nikolas Tsoubris</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+        }
+
+        #header {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #800000;
+        }
+
+        #header h1 {
+            margin: 0;
+            color: #FFF;
+        }
+
+        #main {
+            display: flex;
+            min-height: 80vh;
+        }
+
+        #leftContent {
+            width: 25%;
+            background-color: #FFEFCB;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+
+        #leftContent ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #leftContent li {
+            margin-bottom: 15px;
+        }
+
+        #leftContent a {
+            text-decoration: none;
+            color: #800000;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        #leftContent a:hover {
+            color: #0d47a1;
+        }
+
+        #rightContent {
+            width: 75%;
+            padding: 30px;
+            background-color: #ffffff;
+        }
+
+        h1#welcome {
+            color: #0d47a1;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .accordion {
+            background-color: #bbdefb;
+            color: #0d47a1;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.1em;
+            transition: 0.4s;
+            margin-top: 10px;
+            border-radius: 8px;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+			transition: 0.4s, transform 0.3s ease;
+        }
+
+        .active, .accordion:hover {
+            background-color: #90caf9;
+			transform: scale(1.03);
+        }
+
+        .panel {
+            padding: 0 15px;
+            display: none;
+            background-color: #e3f2fd;
+            overflow: hidden;
+        }
+		
+		#footer {
+            background-color: #000000;
+            text-align: center;
+            padding: 15px;
+            border-top: 3px solid #800000;
+        }
+
+        #footer p {
+            margin: 5px;
+            color: #FFF;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Nikolas Tsoubris</h1>
+    </div>
+
+    <div id="main">
+        <div id="leftContent">
+            <ul>
+                <li><a href="main.html">Αρχική</a></li>
+                <li><a href="edu.html">Σπουδές</a></li>
+                <li><a href="contact.html">Στοιχεία Επικοινωνίας</a></li>
+                <li><a href="projects.html">Projects</a></li> <!-- Προστέθηκε -->   
+			</ul>
+        </div>
+
+        <div id="rightContent">
+            <h1 id="welcome">Σπουδές</h1>
+            <p>
+                Σπουδάζω <strong>Διοίκηση Επιχειρήσεων</strong> στο <strong>Πανεπιστήμιο Δυτικής Αττικής</strong>. 
+            </p>
+            <p>
+                Κατέχω πτυχίο <strong>αγγλικής γλώσσας</strong>, <strong>(Michigan ECPE)</strong>, <strong>γερμανικής γλώσσας</strong>,<strong>(Goethe B1)</strong>, γεγονός που ενισχύει την ικανότητά μου να επικοινωνώ αποτελεσματικά και σε διεθνές περιβάλλον. 
+            </p>
+
+            <button class="accordion">Ηλεκτρονικό Επιχειρείν</button>
+            <div class="panel">
+                <img src="http://moodle.teipir.gr/pluginfile.php/6008/course/summary/e-commerce.jpg" alt="E-commerce">
+                <p>
+                    Το μάθημα εστιάζει στις αρχές του ηλεκτρονικού εμπορίου και των επιχειρηματικών μοντέλων στο διαδίκτυο. Απέκτησα γνώσεις σε e-commerce πλατφόρμες, digital marketing και ψηφιακές στρατηγικές.
+                </p>
+            </div>
+
+            <button class="accordion">Εισαγωγή στην Πληροφορική και τον Προγραμματισμό Η/Υ</button>
+            <div class="panel">
+                <img src="http://moodle.teipir.gr/pluginfile.php/7081/course/summary/programming.jpg" alt="Programming">
+                <p>
+                    Μέσα από αυτό το μάθημα, εξοικειώθηκα με έννοιες όπως αλγόριθμοι, βασικές εντολές, και ανάπτυξη απλών εφαρμογών με χρήση γλωσσών όπως η Python.
+                </p>
+            </div>
+
+            <button class="accordion">Ανάπτυξη Διαδραστικού Ψηφιακού Εκπαιδευτικού Περιεχομένου</button>
+            <div class="panel">
+                <img src="http://moodle.teipir.gr/pluginfile.php/27319/course/summary/Lego.jpg" alt="Digital Learning">
+                <p>
+                    Το μάθημα επικεντρώθηκε στη δημιουργία διαδραστικού εκπαιδευτικού περιεχομένου μέσω τεχνολογιών όπως το HTML5 και εκπαιδευτικά σενάρια, ενισχύοντας τις δεξιότητές μου στην ψηφιακή παιδαγωγική.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Copyright 2025 © Business Administration - University of West Attica</p>
+        <p>Education Page | Designed by Nikolas Tsoubris</p>
+    </div>
+
+    <script>
+        const acc = document.getElementsByClassName("accordion");
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                const panel = this.nextElementSibling;
+                panel.style.display = panel.style.display === "block" ? "none" : "block";
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Στοιχεία Επικοινωνίας - Nikolas Tsoubris</title>
+    <link rel="stylesheet" type="text/css" href="Stylesheet_html5.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+        }
+
+        #header {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #800000;
+        }
+
+        #header h1 {
+            margin: 0;
+            color: #FFF;
+        }
+
+        #main {
+            display: flex;
+            min-height: 80vh;
+        }
+
+        #leftContent {
+            width: 25%;
+            background-color: 	#FFEFCB;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+
+        #leftContent ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #leftContent li {
+            margin-bottom: 15px;
+        }
+
+        #leftContent a {
+            text-decoration: none;
+            color: #800000;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        #leftContent a:hover {
+            color: #0d47a1;
+        }
+
+        #rightContent {
+            width: 75%;
+            padding: 30px;
+            background-color: #ffffff;
+        }
+
+        h1#welcome {
+            color: #0d47a1;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .accordion {
+            background-color: #bbdefb;
+            color: #0d47a1;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.1em;
+            transition: 0.4s;
+            margin-top: 10px;
+            border-radius: 8px;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .active, .accordion:hover {
+            background-color: #90caf9;
+        }
+
+        .panel {
+            padding: 0 15px;
+            display: none;
+            background-color: #e3f2fd;
+            overflow: hidden;
+        }
+		
+		#footer {
+            background-color: #000000;
+            text-align: center;
+            padding: 15px;
+            border-top: 3px solid #800000;
+        }
+
+        #footer p {
+            margin: 5px;
+            color: #FFF;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>Nikolas Tsoubris</h1>
+    </div>
+
+    <div id="main">
+        <div id="leftContent">
+            <ul>
+                <li><a href="main.html">Αρχική</a></li>
+                <li><a href="edu.html">Σπουδές</a></li>
+                <li><a href="contact.html">Στοιχεία Επικοινωνίας</a></li>
+                <li><a href="projects.html">Projects</a></li> <!-- Προστέθηκε -->
+			</ul>
+        </div>
+
+        <div id="rightContent">
+            <h1>Στοιχεία Επικοινωνίας</h1>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i><strong>Email:</strong> <a href="mailto:tsoumprisnikos@gmail.com">tsoumprisnikos@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i><strong>Τηλέφωνο:</strong> <a href="tel:6942881971">6942881971</a></p>
+                <p><i class="fas fa-map-marker-alt"></i><strong>Τοποθεσία: Πειραιάς, Ελλάδα</strong></p>
+				<p>
+					<i class="fas fa-link"></i><strong>LinkedIn:</strong> 
+					<a href="https://www.linkedin.com/in/nikos-tsoumpris-ab33a51a1/" target="_blank">
+						https://www.linkedin.com/in/nikos-tsoumpris-ab33a51a1/
+					</a>
+				</p>
+             </div>
+        </div>
+        </div> 
+    </div> 
+
+    <div style="clear: both;"></div> 
+
+    <div id="footer">
+        <p>Copyright 2025 © Business Administration - University of West Attica</p>
+        <p>Education Page | Designed by Nikolas Tsoubris</p>
+    </div>
+
+</body>
+</html>
+
